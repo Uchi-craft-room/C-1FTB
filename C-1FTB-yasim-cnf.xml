@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="C-1FTB-base.xml">
+
+  <sim>
+
+    <description>C-1 FTB (YASim)</description>
+    <author>Hitoshi Uchida (3D/FDM)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">C-1FTB-yasim</aero>
+
+  </sim>
+
+</PropertyList>
+
+

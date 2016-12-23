@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<PropertyList>
+
+  <path>marker-beacon.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>O</object-name>
+    <object-name>M</object-name>
+    <object-name>A</object-name>
+    <emission>
+      <red>1.0</red>
+      <green>1.0</green>
+      <blue>1.0</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>O</object-name>
+    <condition>
+    <property>instrumentation/marker-beacon/outer</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>M</object-name>
+    <condition>
+    <property>instrumentation/marker-beacon/middle</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>A</object-name>
+    <condition>
+    <property>instrumentation/marker-beacon/inner</property>
+    </condition>
+  </animation>
+
+</PropertyList>

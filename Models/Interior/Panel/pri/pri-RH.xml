@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+<path>pri.ac</path>
+
+<animation>
+ <type>rotate</type>
+ <object-name>needle</object-name>
+ <property>/engines/engine[0]/epr</property>
+ <interpolation>
+	 <entry><ind>-0.8</ind><dep>-36</dep></entry>
+	 <entry><ind> 1.0</ind><dep>  0</dep></entry>
+	 <entry><ind> 2.4</ind><dep>252</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- lighting -->
+
+  <animation> 
+   <object-name>mount</object-name>
+<object-name>face</object-name>
+<object-name>needle-w</object-name>
+   <type>material</type>
+    <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.7</red>
+        <green>0.3</green>
+        <blue>0.3</blue>
+      </emission>
+  </animation>
+
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>50</max-m>
+ </animation>
+
+</PropertyList>
+
+
+

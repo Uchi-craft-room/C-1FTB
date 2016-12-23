@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="C-1FTB-yasim-cnf.xml">
+
+  <sim>
+    <description>C-1 FTB (YASim)</description>
+    <status>Ver.1.1</status>
+    <author>Hitoshi Uchida(3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+
+
+

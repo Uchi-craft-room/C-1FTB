@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>gearhandle.ac</path>
+
+  <animation>
+	  <type>material</type>
+	  <object-name>gear_lever</object-name>
+	  <emission>
+		  <red>   0.7 </red>
+		  <green> 0.1 </green>
+		  <blue>  0.1 </blue>
+		  <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+	  </emission>
+  </animation>
+
+  <animation>
+	  <type>material</type>
+	  <object-name>rect</object-name>
+          <object-name>left-up</object-name>
+          <object-name>nose-up</object-name>
+          <object-name>right-up</object-name>
+	  <emission>
+		  <red>   0.7 </red>
+		  <green> 0.3 </green>
+		  <blue>  0.3 </blue>
+		  <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+	  </emission>
+  </animation>
+
+
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>gear_lever</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear/gear-down</property>
+      </binding>
+    <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+<animation>
+ <type>rotate</type>
+  <object-name>gear_lever</object-name>
+  <property>controls/gear/gear-down</property>
+  <factor>25</factor>
+  <center>
+  <x-m> -0.08 </x-m>
+  <y-m> 0 </y-m>
+  <z-m> 0 </z-m>
+  </center>
+  <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+  </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+       <object-name>left-up</object-name>
+    <condition>
+      <and>
+        <equals>
+            <property>gear/gear[2]/position-norm</property>
+            <value>0</value>
+        </equals>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+       <object-name>nose-up</object-name>
+    <condition>
+      <and>
+        <equals>
+            <property>gear/gear[0]/position-norm</property>
+            <value>0</value>
+        </equals>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+       <object-name>right-up</object-name>
+    <condition>
+      <and>
+        <equals>
+            <property>gear/gear/position-norm</property>
+            <value>0</value>
+        </equals>
+    </and>
+    </condition>
+  </animation>
+
+</PropertyList>
+
+
+
+
+
+
+

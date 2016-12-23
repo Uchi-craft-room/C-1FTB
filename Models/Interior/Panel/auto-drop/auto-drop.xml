@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>auto-drop.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>switch</object-name>
+    <object-name>nut</object-name>
+    <object-name>rot</object-name>
+    <object-name>rot-UPR</object-name>
+    <object-name>case</object-name>
+    <object-name>base</object-name>
+    <object-name>switchnut</object-name>
+    <object-name>Circle</object-name>
+    <object-name>Switch-jett</object-name>
+    <object-name>knob</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/engines/engine[0]/starter</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/engines/engine[1]/starter</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/engines/engine[0]/throttle</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/engines/engine[1]/throttle</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch</object-name>
+    <property>controls/engines/engine[0]/starter</property>
+    <factor>20</factor>
+    <axis>
+      <x>  0 </x>
+      <y> 1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.03 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>case</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/engines/engine/magnetos</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>case</object-name>
+    <property>controls/engines/engine/magnetos</property>
+    <factor>90</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.02 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0.005 </z-m>
+    </center>
+  </animation>
+
+
+
+</PropertyList>
+
+
+

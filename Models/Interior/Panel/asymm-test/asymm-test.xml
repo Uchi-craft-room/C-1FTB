@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>asymm-test.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <object-name>switch</object-name>
+    <object-name>nut</object-name>
+    <object-name>rot</object-name>
+    <object-name>rot-UPR</object-name>
+    <object-name>switch.004</object-name>
+    <object-name>nut.004</object-name>
+    <object-name>rot.004</object-name>
+    <object-name>rot-UPR.004</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+</PropertyList>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>rud_trim.ac</path>
+
+
+<!-- RUDDER TRIM -->
+    <animation>
+        <type>pick</type>
+        <object-name>rud-dial</object-name>
+        <visible>true</visible>
+        <action>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/flight/rudder-trim</property>
+                <step>-0.05</step>
+                <min>-1</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>rud-dial</object-name>
+        <visible>true</visible>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/flight/rudder-trim</property>
+                <step>0.05</step>
+                <min>-1</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>rud-dial</object-name>
+  <property>controls/flight/rudder-trim</property>
+  <interpolation>
+   <entry><ind>1</ind><dep>-180</dep></entry>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>-1</ind><dep>180</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.132 </x-m>
+   <y-m> 0.077 </y-m>
+   <z-m> 0.025 </z-m>
+  </center>
+  <axis>
+   <x> 0 </x>
+   <y> 0 </y>
+   <z> 1 </z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>rud-trim</object-name>
+  <property>controls/flight/rudder-trim</property>
+  <interpolation>
+   <entry><ind>1</ind><dep>-43</dep></entry>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>-1</ind><dep>43</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.133 </x-m>
+   <y-m> 0.077 </y-m>
+   <z-m> 0.039 </z-m>
+  </center>
+  <axis>
+   <x> 0 </x>
+   <y> 0 </y>
+   <z> 1 </z>
+  </axis>
+ </animation>
+
+
+<!-- AILERON TRIM -->
+    <animation>
+        <type>pick</type>
+        <object-name>aileron-wheel</object-name>
+        <visible>true</visible>
+        <action>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/flight/aileron-trim</property>
+                <step>-0.05</step>
+                <min>-1</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>aileron-wheel</object-name>
+        <visible>true</visible>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/flight/aileron-trim</property>
+                <step>0.05</step>
+                <min>-1</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>aileron-wheel</object-name>
+  <property>controls/flight/aileron-trim</property>
+  <interpolation>
+   <entry><ind>1</ind><dep>-720</dep></entry>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>-1</ind><dep>720</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.299 </x-m>
+   <y-m>-0.065 </y-m>
+   <z-m>-0.087 </z-m>
+  </center>
+  <axis>
+   <x> 1 </x>
+   <y> 0 </y>
+   <z> 0 </z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>aileron-trim</object-name>
+  <property>controls/flight/aileron-trim</property>
+  <interpolation>
+   <entry><ind>1</ind><dep>-0.06</dep></entry>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>-1</ind><dep>0.06</dep></entry>
+  </interpolation>
+  <axis>
+   <x> 0 </x>
+   <y> -1 </y>
+   <z> 0 </z>
+  </axis>
+ </animation>
+
+
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <object-name>rud-dial</object-name>
+    <object-name>reset-sw</object-name>
+    <object-name>aileron-wheel</object-name>
+    <object-name>rud-trim</object-name>
+    <object-name>aileron-trim</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>
+
+
+
+
+
+
+
+
+
+
+
+

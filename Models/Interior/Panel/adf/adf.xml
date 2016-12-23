@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+    <path>adf.ac</path>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>vol</object-name>
+        <property>instrumentation/adf/volume-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.009</x-m>
+            <y-m>-0.046</y-m>
+            <z-m> 0.023</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!--    Active Frequency   -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.002</object-name>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>0.0001</factor>
+        <step>1000</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.003</object-name>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.004</object-name>
+         <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.005</object-name>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!--    Preselected Frequency     -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.002</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>0.0001</factor>
+        <step>1000</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.003</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.004</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.005</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+
+    <animation>
+        <type>pick</type>
+        <object-name>xfer</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-swap</command>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        </binding>
+        </action>
+    </animation>
+
+
+<!-- ON OFF / VOLUME -->
+    <animation>
+        <type>pick</type>
+        <object-name>vol</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>false</repeatable>
+             <binding>
+                <command>property-assign</command>
+                <property>instrumentation/adf/power-btn</property>
+                <value>false</value>
+            </binding>
+             <binding>
+                <command>property-assign</command>
+                <property>instrumentation/adf/volume-norm</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>vol</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/adf/power-btn</property>
+                <value>true</value>
+            </binding>
+        </action>
+    </animation>
+
+
+    <animation>
+        <type>pick</type>
+       <object-name>vol</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/volume-norm</property>
+                <step>-0.1</step>
+                <min>0</min>
+                <max>1</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+       <object-name>vol</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/volume-norm</property>
+                <step>0.1</step>
+                <min>0</min>
+                <max>1</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+<!-- SELECTED-BUTTON -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq001</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/selected-khz</property>
+                <step>1000</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq001</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/selected-khz</property>
+                <step>-1000</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq002</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/selected-khz</property>
+                <step>100</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq002</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/selected-khz</property>
+                <step>-100</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq003</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/selected-khz</property>
+                <step>10</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+   <animation>
+        <type>pick</type>
+        <object-name>freq003</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/selected-khz</property>
+                <step>-10</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq004</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/selected-khz</property>
+                <step>1</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq004</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/selected-khz</property>
+                <step>-1</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+
+
+<!-- STANDBY-BUTTON -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>stby001</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>1000</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>stby001</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>-1000</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>stby002</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>100</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>stby002</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>-100</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>stby003</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>10</step>
+                <min>10</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>stby003</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>-10</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>stby004</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>1</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>stby004</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>-1</step>
+                <min>200</min>
+                <max>1799</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>10</max-m>
+	</animation>
+ 
+  <animation>
+        <object-name>base</object-name>
+        <object-name>vol</object-name>
+        <object-name>knob</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.7</red>
+        <green>0.3</green>
+        <blue>0.3</blue>
+      </emission>
+  </animation> 
+
+  <animation>
+        <object-name>freq.002</object-name>
+        <object-name>freq.003</object-name>
+        <object-name>freq.004</object-name>
+        <object-name>freq.005</object-name>
+        <object-name>stby.002</object-name>
+        <object-name>stby.003</object-name>
+        <object-name>stby.004</object-name>
+        <object-name>stby.005</object-name>
+        <object-name>freq001</object-name>
+        <object-name>freq002</object-name>
+        <object-name>freq003</object-name>
+        <object-name>freq004</object-name>
+        <object-name>stby001</object-name>
+        <object-name>stby002</object-name>
+        <object-name>stby003</object-name>
+        <object-name>stby004</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.7</red>
+        <green>0.5</green>
+        <blue>0.3</blue>
+      </emission>
+  </animation> 
+</PropertyList>
+
+
+
+
+
+

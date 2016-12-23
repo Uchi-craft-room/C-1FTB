@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>eng-emerg.ac</path>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>caution</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>caution</object-name>
+    <condition>
+      <or>
+       <and>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+	  <value>16</value>
+        </greater-than>
+
+        <equals>
+          <property>engines/engine[1]/out-of-fuel</property>
+          <value>true</value>
+        </equals>
+
+        <property>/sim/model/lights/sbc1/state</property>
+      </and>
+       <and>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+	  <value>16</value>
+        </greater-than>
+
+        <equals>
+          <property>engines/engine[0]/out-of-fuel</property>
+          <value>true</value>
+        </equals>
+
+        <property>/sim/model/lights/sbc1/state</property>
+      </and>
+      </or>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>caution</object-name>
+    <emission>
+      <!-- <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop> -->
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission> 
+  </animation> 
+</PropertyList>
+
+
+

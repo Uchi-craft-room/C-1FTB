@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>tat.ac</path>
+
+ <!-- Lightning -->
+
+ <animation>
+  <type>material</type>
+      <object-name>tat-digit1</object-name>
+      <object-name>tat-digit2</object-name>
+      <object-name>tat-digit3</object-name>
+      <object-name>tat-digit4</object-name>
+      <object-name>tat-digit-deci</object-name>
+      <object-name>epr-digit1</object-name>
+      <object-name>epr-digit2</object-name>
+      <object-name>epr-digit3</object-name>
+      <object-name>epr-digit4</object-name>
+      <object-name>epr-digit-deci</object-name>
+      <object-name>tat-digit1.001</object-name>
+      <object-name>tat-digit2.001</object-name>
+      <object-name>tat-digit3.001</object-name>
+      <object-name>tat-digit4.001</object-name>
+  <emission>
+   <red>1</red>
+   <green>1</green>
+   <blue>1</blue>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>mount</object-name>
+  <object-name>climb</object-name>
+  <emission>
+   <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+   <red>0.7</red>
+   <green>0.3</green>
+   <blue>0.3</blue>
+  </emission>
+ </animation>
+
+
+    <animation>
+     <type>select</type>
+     <object-name>tat-digit-deci</object-name>
+     <object-name>epr-digit1</object-name>
+     <object-name>epr-digit2</object-name>
+     <object-name>epr-digit3</object-name>
+     <object-name>epr-digit4</object-name>
+     <object-name>epr-digit-deci</object-name>
+     <condition>
+       <greater-than>
+	   <property>systems/electrical/volts</property>
+	   <value>24</value>
+       </greater-than>
+     </condition>
+    </animation>
+
+    <animation>
+      <type>select</type>
+      <object-name>tat-digit1</object-name>
+      <object-name>tat-digit2</object-name>
+      <object-name>tat-digit3</object-name>
+      <object-name>tat-digit4</object-name>
+     <condition>
+     <and>
+        <greater-than>
+	   <property>systems/electrical/volts</property>
+	   <value>24</value>
+         </greater-than>
+         <greater-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </greater-than>
+     </and>
+     </condition>
+    </animation>
+
+    <animation>
+      <type>select</type>
+      <object-name>tat-digit1.001</object-name>
+      <object-name>tat-digit2.001</object-name>
+      <object-name>tat-digit3.001</object-name>
+      <object-name>tat-digit4.001</object-name>
+     <condition>
+     <and>
+        <greater-than>
+	   <property>systems/electrical/volts</property>
+	   <value>24</value>
+         </greater-than>
+         <less-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </less-than>
+     </and>
+     </condition>
+    </animation>
+
+<!--    TAT DIGIT   -->
+<!-- TAT greater than 0dec -->
+    <animation>
+        <type>textranslate</type>
+        <object-name>tat-digit1</object-name>
+        <property>environment/total-air-temparature-degc</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <condition>
+          <greater-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </greater-than>
+        </condition>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>tat-digit2</object-name>
+        <property>environment/total-air-temparature-degc</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <condition>
+          <greater-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </greater-than>
+        </condition>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>tat-digit3</object-name>
+        <property>environment/total-air-temparature-degc</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <condition>
+          <greater-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </greater-than>
+        </condition>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>tat-digit4</object-name>
+        <property>environment/total-air-temparature-degc</property>
+        <factor>1</factor>
+        <step>0.1</step>
+        <condition>
+          <greater-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </greater-than>
+        </condition>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+<!-- TAT less than 0degc -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>tat-digit2.001</object-name>
+        <property>environment/total-air-temparature-degc</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <condition>
+          <less-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </less-than>
+        </condition>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>tat-digit3.001</object-name>
+        <property>environment/total-air-temparature-degc</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <condition>
+          <less-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </less-than>
+        </condition>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>tat-digit4.001</object-name>
+        <property>environment/total-air-temparature-degc</property>
+        <factor>1</factor>
+        <step>0.1</step>
+        <condition>
+          <less-than>
+	   <property>environment/total-air-temparature-degc</property>
+	   <value>0</value>
+          </less-than>
+        </condition>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+<!--    EPR DIGIT   -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>epr-digit1</object-name>
+        <property>engines/engine[3]/epr</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>epr-digit2</object-name>
+        <property>engines/engine[3]/epr</property>
+        <factor>0.9</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>epr-digit3</object-name>
+        <property>engines/engine[3]/epr</property>
+        <factor>1</factor>
+        <step>0.1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+</PropertyList>

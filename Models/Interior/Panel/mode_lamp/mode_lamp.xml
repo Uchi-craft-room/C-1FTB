@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>mode_lamp.ac</path>
+
+  <animation>
+    <type>select</type>
+    <object-name>light</object-name>
+    <condition>
+    <and>
+     <less-than>
+       <property>position/gear-agl-ft</property>
+       <value>500</value>
+     </less-than>
+     <less-than>
+       <property>/engines/engine[0]/epr</property>
+       <value>0.9</value>
+     </less-than>
+    <not>
+       <property>gear/gear[2]/wow</property>
+     </not>
+    </and>
+    </condition>
+  </animation>
+
+</PropertyList>
+

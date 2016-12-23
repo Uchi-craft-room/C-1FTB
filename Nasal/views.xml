@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <chase-distance-m type="double" archive="y"> -50 </chase-distance-m>
+
+
+  <view n="0">
+    <internal archive="y">true</internal>
+    <config>
+       <x-offset-m archive="y"> -0.55 </x-offset-m>	<!-- Right -->
+       <y-offset-m archive="y">  1.00 </y-offset-m>	<!-- Up    -->
+       <z-offset-m archive="y"> -7.60 </z-offset-m>	<!-- Back  -->
+       <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg> 70 </default-field-of-view-deg>
+      <dynamic-view type="bool">false</dynamic-view>
+    </config>
+  </view>
+
+  <view n="100">
+    <name>Passanger Seat View</name>
+    <internal archive="y">true</internal>
+    <type>lookfrom</type>
+    <config>
+      <from-model type="bool">true</from-model>
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+       <x-offset-m archive="y">  0.55 </x-offset-m>	<!-- Right -->
+       <y-offset-m archive="y">  1.00 </y-offset-m>	<!-- Up    -->
+       <z-offset-m archive="y"> -7.60 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg> 70 </default-field-of-view-deg>
+      <dynamic-view type="bool">false</dynamic-view>
+    </config>
+  </view>
+
+  <view n="101">
+    <name>Commander Seat View</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+       <x-offset-m archive="y">  0.00 </x-offset-m>	<!-- Right -->
+       <y-offset-m archive="y">  1.07 </y-offset-m>	<!-- Up    -->
+       <z-offset-m archive="y"> -6.75 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg> 0 </pitch-offset-deg>
+      <default-field-of-view-deg> 70 </default-field-of-view-deg>
+      <dynamic-view type="bool">false</dynamic-view>
+    </config>
+  </view>
+
+  <view n="102">
+    <name>Crew Seat View</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+       <x-offset-m archive="y">  0.35 </x-offset-m>	<!-- Right -->
+       <y-offset-m archive="y">  1.07 </y-offset-m>	<!-- Up    -->
+       <z-offset-m archive="y"> -5.80 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg> 0 </pitch-offset-deg>
+      <default-field-of-view-deg> 70 </default-field-of-view-deg>
+      <dynamic-view type="bool">false</dynamic-view>
+    </config>
+  </view>
+
+</PropertyList>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

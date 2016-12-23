@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>fuel-ctrl.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <object-name>switch</object-name>
+    <object-name>rot-UPR</object-name>
+    <object-name>switch.004</object-name>
+    <object-name>rot-UPR.004</object-name>
+    <object-name>switch.001</object-name>
+    <object-name>rot-UPR.001</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+<!-- shut off LH -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch.004</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>consumables/fuel/tank[1]/selected</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>switch.004</object-name>
+    <property>consumables/fuel/tank[1]/selected</property>
+    <factor>0.005</factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </center>
+  </animation>
+
+
+
+<!-- shut off RH -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>consumables/fuel/tank[2]/selected</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>switch</object-name>
+    <property>consumables/fuel/tank[2]/selected</property>
+    <factor>0.005</factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </center>
+  </animation>
+
+
+
+
+
+<!-- RESET -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch.001</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>consumables/fuel/tank[1]/selected</property>
+        <value>true</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>consumables/fuel/tank[2]/selected</property>
+        <value>true</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+</PropertyList>

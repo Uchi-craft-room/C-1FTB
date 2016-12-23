@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<path>interior.ac</path>
+
+
+
+  <!-- WIPER -->
+  <model>
+    <name>WIPER-LH</name>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/wiper/wiper-LH.xml</path>
+    <offsets>
+      <x-m> -8.750 </x-m>
+      <y-m> -0.300 </y-m>
+      <z-m>  0.760 </z-m>
+      <pitch-deg> -50 </pitch-deg>
+      <roll-deg>   0 </roll-deg>
+      <heading-deg> 25 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>WIPER-RH</name>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/wiper/wiper-RH.xml</path>
+    <offsets>
+      <x-m> -8.750 </x-m>
+      <y-m>  0.300 </y-m>
+      <z-m>  0.760 </z-m>
+      <pitch-deg> -50 </pitch-deg>
+      <roll-deg>   0 </roll-deg>
+      <heading-deg> -25 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- Pilot -->
+  <model>
+    <name>Pilot</name>
+    <path>Aircraft/C-1FTB/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -7.500 </x-m>
+      <y-m> -0.550 </y-m>
+      <z-m>  0.560 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>co-Pilote</name>
+    <path>Aircraft/C-1FTB/Models/Pilot/co-pilot.xml</path>
+    <offsets>
+      <x-m> -7.500 </x-m>
+      <y-m>  0.550 </y-m>
+      <z-m>  0.560 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>commander</name>
+    <path>Aircraft/C-1FTB/Models/Pilot/commander.xml</path>
+    <offsets>
+      <x-m> -6.700 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.600 </z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <name>navigator</name>
+    <path>Aircraft/C-1FTB/Models/Pilot/navigator.xml</path>
+    <offsets>
+      <x-m> -5.750 </x-m>
+      <y-m>  0.380 </y-m>
+      <z-m>  0.600 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ADI --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/adi/adi.xml</path>
+    <offsets>
+      <x-m> -8.250 </x-m>
+      <y-m> -0.550 </y-m>
+      <z-m>  0.750 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/adi/adi.xml</path>
+    <offsets>
+      <x-m> -8.250 </x-m>
+      <y-m>  0.550 </y-m>
+      <z-m>  0.750 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- ALT --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/alt/alt.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.440 </y-m>
+      <z-m>  0.728 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/alt/alt.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.665 </y-m>
+      <z-m>  0.728 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- RADAR ALT --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/radar-alt/alt.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.190 </y-m>
+      <z-m>  0.850 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- ASI --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/asi2/asi2.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.665 </y-m>
+      <z-m>  0.730 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/asi/asi.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.440 </y-m>
+      <z-m>  0.728 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- HSI --> 
+  <model>
+     <path>Aircraft/C-1FTB/Models/Interior/Panel/hsi/A-10-HSI.xml</path>
+    <offsets>
+      <x-m> -8.260 </x-m>
+      <y-m> -0.550 </y-m>
+      <z-m>  0.620 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+     <path>Aircraft/C-1FTB/Models/Interior/Panel/hsi/A-10-HSI.xml</path>
+    <offsets>
+      <x-m> -8.260 </x-m>
+      <y-m>  0.550 </y-m>
+      <z-m>  0.620 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- VSI --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.440 </y-m>
+      <z-m>  0.641 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.665 </y-m>
+      <z-m>  0.641 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- TRIM-INDICATE --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/trim/trim.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.440 </y-m>
+      <z-m>  0.553 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/trim/trim.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.665 </y-m>
+      <z-m>  0.553 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- RMI --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/rmi/rmi.xml</path>
+    <offsets>
+      <x-m> -8.273 </x-m>
+      <y-m> -0.665 </y-m>
+      <z-m>  0.641 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/rmi/rmi.xml</path>
+    <offsets>
+      <x-m> -8.273 </x-m>
+      <y-m>  0.440 </y-m>
+      <z-m>  0.641 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- DGHI --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/dghi/dghi.xml</path>
+    <offsets>
+      <x-m> -8.273 </x-m>
+      <y-m> -0.665 </y-m>
+      <z-m>  0.550 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/dghi/dghi.xml</path>
+    <offsets>
+      <x-m> -8.273 </x-m>
+      <y-m> 0.440 </y-m>
+      <z-m>  0.550 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- chronograph -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/chronograph/chronograph.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.757 </y-m>
+      <z-m>  0.675 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/chronograph/chronograph.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.757 </y-m>
+      <z-m>  0.675 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--ACC-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/acc/accel.xml</path>
+    <offsets>
+      <x-m> -8.265 </x-m>
+      <y-m> -0.757 </y-m>
+      <z-m>  0.592 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/acc/accel.xml</path>
+    <offsets>
+      <x-m> -8.265 </x-m>
+      <y-m>  0.757 </y-m>
+      <z-m>  0.592 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- N1 RH -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/rpm/rpm-RH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m>  0.725 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- N1 LH-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/rpm/rpm-LH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.105 </y-m>
+      <z-m>  0.725 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--tgt-RH -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/tgt/tgt-RH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m>  0.663 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--tgt-LH -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/tgt/tgt-LH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.105 </y-m>
+      <z-m>  0.663 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- N2 RH -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/rpm2/rpm2-RH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m>  0.597 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- N2 LH-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/rpm2/rpm2-LH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.105 </y-m>
+      <z-m>  0.597 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FUEL-FLOW-RH -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/ff/ff-RH.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> 0.105 </y-m>
+      <z-m> 0.725 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FUEL-FLOW-LH -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/ff/ff-LH.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> 0.035 </y-m>
+      <z-m> 0.725 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--OIL-PRESS-RH-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/oil-press/oil-press-RH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.105 </y-m>
+      <z-m>  0.663 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--OIL-PRESS-LH-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/oil-press/oil-press-LH.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> 0.035 </y-m>
+      <z-m> 0.663 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--oil-temp-RH-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/oil-temp/oil-temp-RH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.105 </y-m>
+      <z-m>  0.597 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--oil-temp-LH-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/oil-temp/oil-temp-LH.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> 0.035 </y-m>
+      <z-m> 0.597 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FUEL-QTY-CTR -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/fuel-ctr/fuel-ctr.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> -0.245 </y-m>
+      <z-m> 0.730 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FUEL-QTY-TOTAL -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/fuel-total/fuel-total.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> -0.175 </y-m>
+      <z-m> 0.730 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FUEL-QTY-AUX -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/fuel-aux/fuel-aux.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> -0.245 </y-m>
+      <z-m> 0.667 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FUEL-QTY-MAIN -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/fuel-main/fuel-main.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> -0.175 </y-m>
+      <z-m> 0.667 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- PRESS-RATIO RH -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/pri/pri-RH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m>  0.790 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- PRESS-RATIO LH-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/pri/pri-LH.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.105 </y-m>
+      <z-m>  0.790 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--ENGINE-AMP -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/eng-amp/eng-amp.xml</path>
+    <offsets>
+       <x-m> -8.270 </x-m>
+      <y-m> -0.175 </y-m>
+      <z-m> 0.600 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/eng-amp/eng-amp.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.245 </y-m>
+      <z-m>  0.600 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- MARKER-BEACON --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/marker-beacon/marker-beacon.xml</path>
+    <offsets>
+      <x-m> -8.273 </x-m>
+      <y-m> -0.655 </y-m>
+      <z-m>  0.790 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/marker-beacon/marker-beacon.xml</path>
+    <offsets>
+      <x-m> -8.273 </x-m>
+      <y-m>  0.655 </y-m>
+      <z-m>  0.785 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- TAT --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/tat/tat.xml</path>
+    <offsets>
+      <x-m> -8.273 </x-m>
+      <y-m> -0.275 </y-m>
+      <z-m>  0.810 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- GEAR HANDLE -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/Landing-Gear/gearhandle.xml</path>
+    <offsets>
+      <x-m> -8.273 </x-m>
+      <y-m>  0.175 </y-m>
+      <z-m>  0.670 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- FLAP indicate --> 
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/flap-indicate/flap-indicate.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.295 </y-m>
+      <z-m>  0.820 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -8.607 </x-m>
+      <y-m> -0.309 </y-m>
+      <z-m> 0.304 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -8.607 </x-m>
+      <y-m> -0.268 </y-m>
+      <z-m> 0.304 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+      <x-m> -8.607 </x-m>
+      <y-m> -0.288 </y-m>
+      <z-m>  0.322</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--INDICATE PANEL-->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/indicate-panel/indicate-panel.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> 0.530 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/indicate-panel/indicate-panel2.xml</path>
+    <offsets>
+      <x-m> -8.275 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> 0.860 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- HYD --> 
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/hyd/hyd.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.295 </y-m>
+      <z-m>  0.725 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- HYD-PRESS --> 
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/hyd-press/hyd-press1.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.295 </y-m>
+      <z-m>  0.667 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/hyd-press/hyd-press2.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.295 </y-m>
+      <z-m>  0.600 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- ASYMMETRY-TEST -->
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/asymm-test/asymm-test.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.185 </y-m>
+      <z-m>  0.820 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- HYD-QTY -->
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/hyd-qty/hyd-qty.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.305 </y-m>
+      <z-m>  0.766 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- FUEL CTRL -->
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/fuel-ctrl/fuel-ctrl.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.067 </y-m>
+      <z-m>  0.765 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- BOX SWITCH -->
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.190 </y-m>
+      <z-m>  0.785 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.230 </y-m>
+      <z-m>  0.785 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.190 </y-m>
+      <z-m>  0.870 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.230 </y-m>
+      <z-m>  0.870 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.277 </y-m>
+      <z-m>  0.870 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.317 </y-m>
+      <z-m>  0.870 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.115 </y-m>
+      <z-m>  0.880 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.115 </y-m>
+      <z-m>  0.840 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.115 </y-m>
+      <z-m>  0.880 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.115 </y-m>
+      <z-m>  0.840 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2_wl.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m>  0.910 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m>  0.932 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2_hdg.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.239 </y-m>
+      <z-m>  0.910 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2_app.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.239 </y-m>
+      <z-m>  0.932 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2_thdg.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.218 </y-m>
+      <z-m>  0.910 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2_alt.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.218 </y-m>
+      <z-m>  0.932 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2_nav.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.197 </y-m>
+      <z-m>  0.910 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m>  0.260 </y-m>
+      <z-m>  0.910 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m>  0.260 </y-m>
+      <z-m>  0.932 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m>  0.239 </y-m>
+      <z-m>  0.910 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch2.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m>  0.239 </y-m>
+      <z-m>  0.932 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- FIRE PULL LEVER -->
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/fire-pull/fire-pull.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.932 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.055 </y-m>
+      <z-m>  0.950 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/box-switch/box-switch.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m>  0.035 </y-m>
+      <z-m>  0.950 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- ANTI SKID -->
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/anti-skid/anti-skid.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m>  0.160 </y-m>
+      <z-m>  0.932 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- ALT SET -->
+   <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/alt-set/alt-set.xml</path>
+    <offsets>
+      <x-m> -8.240 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m>  0.932 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/fuel-qty/fuel-qty.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.315 </y-m>
+      <z-m>  0.665 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- NAV SELECT -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/nav-select/dme.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m> -0.550 </y-m>
+      <z-m>  0.540</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/nav-select/dme.xml</path>
+    <offsets>
+      <x-m> -8.270 </x-m>
+      <y-m>  0.550 </y-m>
+      <z-m>  0.540</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- DG -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/dg/dg.xml</path>
+    <offsets>
+      <x-m> -8.430 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.150</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- MODE-LAMP -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/mode_lamp/mode_lamp.xml</path>
+    <offsets>
+      <x-m>-8.270 </x-m>
+      <y-m>-0.733 </y-m>
+      <z-m> 0.735 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/mode_lamp/mode_lamp_RH.xml</path>
+    <offsets>
+      <x-m>-8.270 </x-m>
+      <y-m> 0.731 </y-m>
+      <z-m> 0.735 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- CASE-SW -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/case-sw/case-sw.xml</path>
+    <offsets>
+      <x-m>-8.270 </x-m>
+      <y-m>-0.767 </y-m>
+      <z-m> 0.525 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/case-sw/case-sw.xml</path>
+    <offsets>
+      <x-m>-8.270 </x-m>
+      <y-m> 0.767 </y-m>
+      <z-m> 0.525 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- eng-emerg --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/caution/eng-emerg.xml</path>
+    <offsets>
+      <x-m>-8.270 </x-m>
+      <y-m> 0.450 </y-m>
+      <z-m> 0.820 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/caution/eng-emerg.xml</path>
+    <offsets>
+      <x-m>-8.270 </x-m>
+      <y-m>-0.450 </y-m>
+      <z-m> 0.820 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- MASTER caution -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/caution/master-caution.xml</path>
+    <offsets>
+      <x-m>-8.270 </x-m>
+      <y-m>-0.450 </y-m>
+      <z-m> 0.790 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/caution/master-caution.xml</path>
+    <offsets>
+      <x-m>-8.270 </x-m>
+      <y-m> 0.450 </y-m>
+      <z-m> 0.790 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- TACAN  -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/tacan/tacan.xml</path>
+    <offsets>
+      <x-m> -8.172 </x-m>
+      <y-m> -0.170 </y-m>
+      <z-m> 0.453</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -64 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- VOR/ILS  -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/COMM/VOR.xml</path>
+    <offsets>
+      <x-m> -8.102 </x-m>
+      <y-m> -0.170 </y-m>
+      <z-m> 0.419</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -64 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- WEATHER RADAR -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/weather-radar/weather-radar.xml</path>
+    <offsets>
+      <x-m> -8.172 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0.453</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -64 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- ADF  -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/adf/adf.xml</path>
+    <offsets>
+      <x-m> -8.172 </x-m>
+      <y-m> 0.170 </y-m>
+      <z-m> 0.453</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -64 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- WX  -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/wx/wx.xml</path>
+    <offsets>
+      <x-m> -8.102 </x-m>
+      <y-m> 0.170 </y-m>
+      <z-m> 0.419</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -64 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- COMPASS  -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/compuss/compuss.xml</path>
+    <offsets>
+      <x-m> -8.238 </x-m>
+      <y-m> 0.170 </y-m>
+      <z-m> 0.486</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -64 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/compuss/compuss.xml</path>
+    <offsets>
+      <x-m> -8.236 </x-m>
+      <y-m>-0.170 </y-m>
+      <z-m> 0.484</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -64 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- WX  -->
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/wx/wx.xml</path>
+    <offsets>
+      <x-m> -8.102 </x-m>
+      <y-m> 0.170 </y-m>
+      <z-m> 0.419</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- thrust-lever -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/power_lever/power_lever.xml</path>
+    <offsets>
+      <x-m> -7.925 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.350</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+ <!-- IFF --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/kt70/kt70.xml</path>
+    <offsets>
+      <x-m> -7.675 </x-m>
+      <y-m>-0.085 </y-m>
+      <z-m> 0.320 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- BIT --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/bit/bit.xml</path>
+    <offsets>
+      <x-m> -7.675 </x-m>
+      <y-m> 0.085 </y-m>
+      <z-m> 0.320 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- AHRS--> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/AHRS/ahrs.xml</path>
+    <offsets>
+      <x-m> -7.634 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.320 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- RUD TRIM--> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/rud_trim/rud_trim.xml</path>
+    <offsets>
+      <x-m> -7.523 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.320 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- COMM1 --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/COMM/vhf_uhf.xml</path>
+    <offsets>
+      <x-m> -7.585 </x-m>
+      <y-m>-0.085 </y-m>
+      <z-m> 0.320 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- COMM2 --> 
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/COMM/vhf_uhf2.xml</path>
+    <offsets>
+      <x-m> -7.486 </x-m>
+      <y-m>-0.085 </y-m>
+      <z-m> 0.320 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!-- OVER HEAD CONSOLE -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/OverHeadConsole/OverHeadConsole.xml</path>
+    <offsets>
+      <x-m> -8.420 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.242</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   73.1 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- TILLER HANDLE -->
+  <animation>
+    <type>rotate</type>
+    <object-name>tiller-hdl-RH</object-name>
+     <property>surface-positions/rudder-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1.00 </ind><dep>  35 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1.00 </ind><dep> -35 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>-7.822 </x1-m>
+      <y1-m> 0.915 </y1-m>
+      <z1-m> 0.485 </z1-m>
+      <x2-m>-7.838 </x2-m>
+      <y2-m> 0.945 </y2-m>
+      <z2-m> 0.423 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>tiller-hdl-LH</object-name>
+     <property>surface-positions/rudder-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1.00 </ind><dep> 35 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>  0 </dep></entry>
+      <entry><ind>  1.00 </ind><dep>-35 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>-7.820 </x1-m>
+      <y1-m>-0.929 </y1-m>
+      <z1-m> 0.488 </z1-m>
+      <x2-m>-7.838 </x2-m>
+      <y2-m>-0.955 </y2-m>
+      <z2-m> 0.425 </z2-m>
+    </axis>
+  </animation>
+
+<!-- PARKING BRAKE -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/Panel/parking-brake/brake-knob.xml</path>
+    <offsets>
+      <x-m> -8.245 </x-m>
+      <y-m> -0.300 </y-m>
+      <z-m>  0.460 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- RR SEAT -->
+
+  <model>
+    <path>Aircraft/C-1FTB/Models/Interior/seat/seat.ac</path>
+    <offsets>
+      <x-m> -6.700</x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/C-1FTB/Models/Interior/seat/seat-enginier.ac</path>
+    <offsets>
+      <x-m> -5.800</x-m>
+      <y-m>  0.380 </y-m>
+      <z-m>  0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+</PropertyList>
+

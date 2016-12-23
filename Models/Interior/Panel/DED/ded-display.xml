@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
+<PropertyList>
+
+ <name>Data Entry Display Panel</name>
+ <background>Aircraft/T-4ADTW/Models/interior/panel/DED/ded.rgb</background>
+ <w>102.4</w>
+ <h>76.8</h>
+
+ <x-offset>0</x-offset>
+ <y-offset>0</y-offset>
+ <z-offset>0</z-offset>
+
+
+ <instruments>
+  <instrument>
+   <name>Data Entry Display</name>
+   <w-base>88</w-base>
+   <h-base>35</h-base>
+   <x>512</x>
+   <y>512</y>
+   <w>1053</w>
+   <h>800</h>
+        <condition>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+        </condition>
+
+ <layers>
+ <!-- ================== 1st row ================= -->
+
+    <layer>
+     <name>metar1</name>
+     <type>text</type>
+     <font>default</font>
+     <point-size>5</point-size>
+     <color>
+      <red>0.63</red>
+      <green>1.0</green>
+      <blue>0.0</blue>
+     </color>
+     <chunks>
+      <chunk>
+       <type>text-value</type>
+       <property>/environment/metar/data</property>
+      </chunk>
+     </chunks>
+     <transformations>
+      <transformation>
+       <type>x-shift</type>
+       <offset>-43</offset>
+      </transformation>
+      <transformation>
+       <type>y-shift</type>
+       <offset>6.5</offset>
+      </transformation>
+     </transformations>
+    </layer>
+
+
+ <!-- ================== 2nd row ================= -->
+
+    <layer>
+     <name>metar2</name>
+     <type>text</type>
+     <font>default</font>
+     <point-size>5</point-size>
+     <color>
+      <red>0.63</red>
+      <green>1.0</green>
+      <blue>0.0</blue>
+     </color>
+     <chunks>
+      <chunk>
+       <type>text-value</type>
+       <property>/environment/metar/data</property>
+      </chunk>
+     </chunks>
+     <transformations>
+      <transformation>
+       <type>x-shift</type>
+       <offset>-133.0</offset>
+      </transformation>
+      <transformation>
+       <type>y-shift</type>
+       <offset>3.5</offset>
+      </transformation>
+     </transformations>
+    </layer>
+
+ <!-- ================== 3rd row ================= -->
+    <layer>
+     <name>metar3</name>
+     <type>text</type>
+     <font>default</font>
+     <point-size>5</point-size>
+     <color>
+      <red>0.63</red>
+      <green>1.0</green>
+      <blue>0.0</blue>
+     </color>
+     <chunks>
+      <chunk>
+       <type>text-value</type>
+       <property>/environment/metar/data</property>
+      </chunk>
+     </chunks>
+     <transformations>
+      <transformation>
+       <type>x-shift</type>
+       <offset>-222</offset>
+      </transformation>
+      <transformation>
+       <type>y-shift</type>
+       <offset>0.5</offset>
+      </transformation>
+     </transformations>
+    </layer>
+
+ <!-- ================== 4th row ================= -->
+    <layer>
+     <name>metar4</name>
+     <type>text</type>
+     <font>default</font>
+     <point-size>5</point-size>
+     <color>
+      <red>0.63</red>
+      <green>1.0</green>
+      <blue>0.0</blue>
+     </color>
+     <chunks>
+      <chunk>
+       <type>text-value</type>
+       <property>/environment/metar/data</property>
+      </chunk>
+     </chunks>
+     <transformations>
+      <transformation>
+       <type>x-shift</type>
+       <offset>-310.0</offset>
+      </transformation>
+      <transformation>
+       <type>y-shift</type>
+       <offset>-2.5</offset>
+      </transformation>
+     </transformations>
+    </layer>
+
+ <!-- ================== 5th row ================= -->
+    <layer>
+     <name>metar5</name>
+     <type>text</type>
+     <font>default</font>
+     <point-size>5</point-size>
+     <color>
+      <red>0.63</red>
+      <green>1.0</green>
+      <blue>0.0</blue>
+     </color>
+     <chunks>
+      <chunk>
+       <type>text-value</type>
+       <property>/environment/metar/data</property>
+      </chunk>
+     </chunks>
+     <transformations>
+      <transformation>
+       <type>x-shift</type>
+       <offset>-397</offset>
+      </transformation>
+      <transformation>
+       <type>y-shift</type>
+       <offset>-5.5</offset>
+      </transformation>
+     </transformations>
+    </layer>
+
+
+<!-- ===================== END OF DED ========================== -->
+
+   </layers>
+  </instrument>
+ </instruments>
+
+
+</PropertyList>

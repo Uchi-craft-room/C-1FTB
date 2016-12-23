@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <particlesystem>
+        <name>right-reverse-splash</name>
+        <texture>splash.png</texture>
+        <emissive>false</emissive>
+        <lighting>false</lighting>
+
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
+
+        <condition>
+            <and>
+                <property>/gear/gear[0]/wow</property>
+                <greater-than>
+                <property>/environment/surface/wetness</property>
+                 <value>0.05</value>
+                </greater-than>
+                <property>controls/engines/engine/reverser</property>
+            </and>
+        </condition>
+
+        <attach>world</attach>
+
+        <placer>
+            <type>point</type>
+        </placer>
+
+        <shooter>
+      <theta-min-deg>70</theta-min-deg>
+      <theta-max-deg>100</theta-max-deg>
+      <phi-min-deg>100</phi-min-deg>
+      <phi-max-deg>200</phi-max-deg>
+            <speed-mps>
+              <property>engines/engine/n1</property>
+              <factor>5</factor>
+            </speed-mps>
+            <rotation-speed>
+                <x-max-deg-sec>15</x-max-deg-sec>
+                <x-min-deg-sec>-15</x-min-deg-sec>
+                <y-max-deg-sec>15</y-max-deg-sec>
+                <y-min-deg-sec>-15</y-min-deg-sec>
+                <z-max-deg-sec>15</z-max-deg-sec>
+                <z-min-deg-sec>-15</z-min-deg-sec>
+            </rotation-speed>
+        </shooter>
+
+        <counter>
+         <particles-per-sec>
+          	<property>engines/engine/n1</property>
+          	<factor>1</factor>
+          	<spread>20</spread>
+         </particles-per-sec>
+        </counter>
+
+        <align>billboard</align>
+
+        <particle>
+            <start>
+                <color>
+                    <red>
+                        <value>1</value>
+                    </red>
+                    <green>
+                        <value>1</value>
+                    </green>
+                    <blue>
+                        <value>1</value>
+                    </blue>
+                    <alpha>
+                        <value>0.1</value>
+                    </alpha>
+                </color>
+                <size>
+                    <property>environment/surface/wetness</property>
+                    <factor>1</factor>
+                </size>
+            </start>
+            <end>
+                <color>
+                    <red>
+                        <value>1</value>
+                    </red>
+                    <green>
+                        <value>1</value>
+                    </green>
+                    <blue>
+                        <value>1</value>
+                    </blue>
+                    <alpha>
+                        <value>0.001</value>
+                    </alpha>
+                </color>
+                <size>
+                    <property>controls/engines/engine/throttle</property>
+                    <factor>3</factor>
+                </size>
+            </end>
+            <life-sec>
+                <property>/environment/surface/wetness</property>
+                <factor>1</factor>
+            </life-sec>
+            <mass-kg>0.01</mass-kg>
+            <radius-m>0.5</radius-m>
+        </particle>
+
+        <program>
+            <fluid>   air  </fluid>
+            <gravity> true  </gravity>
+            <wind>    true    </wind>
+        </program>
+
+    </particlesystem>
+
+</PropertyList>

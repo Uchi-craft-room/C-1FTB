@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>alt-set.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>sw-oth</object-name>
+    <object-name>base</object-name>
+    <object-name>alt-sw</object-name>
+    <object-name>rot</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+<!-- ALT-SET -->
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>alt-on</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/altitude</property>
+        <value>vertical-speed-hold</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/alt-set-sw</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>alt-off</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/altitude</property>
+        <value></value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/alt-set-sw</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>alt-sw</object-name>
+    <property>autopilot/alt-set-sw</property>
+    <factor> 35 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.022 </y-m>
+      <z-m>-0.008 </z-m>
+    </center>
+  </animation>
+
+
+
+<!-- HEADING-SET -->
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>off</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/heading</property>
+        <value></value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/hdg-set-knob</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>wing-level</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/heading</property>
+        <value>wing-leveler</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/hdg-set-knob</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>hdg-bg</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/heading</property>
+        <value>dg-heading-hold</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/hdg-set-knob</property>
+        <value>2</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>t-hdg</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/heading</property>
+        <value>true-heading-hold</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/hdg-set-knob</property>
+        <value>3</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>nav1</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/heading</property>
+        <value>nav1-hold</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/hdg-set-knob</property>
+        <value>4</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>app</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/altitude</property>
+        <value>gs1-hold</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/alt-set-sw</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/locks/heading</property>
+        <value>nav1-hold</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>autopilot/hdg-set-knob</property>
+        <value>5</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>knob</object-name>
+    <property>autopilot/hdg-set-knob</property>
+    <factor> 36 </factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.011 </x-m>
+      <y-m>-0.016 </y-m>
+      <z-m>-0.011 </z-m>
+    </center>
+  </animation>
+
+
+
+</PropertyList>

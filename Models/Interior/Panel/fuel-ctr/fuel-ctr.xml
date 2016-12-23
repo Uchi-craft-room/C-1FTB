@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>fuel-ctr.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Face</object-name>
+  <object-name>PointerTip</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </emission>
+ </animation>
+
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>PointerCentre</object-name>
+        <object-name>PointerTip</object-name>
+        <property>/consumables/fuel/tank[0]/level-lbs</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0.0</dep></entry>
+            <entry><ind>10000</ind><dep>270</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1 </x>
+            <y> 0 </y>
+            <z> 0 </z>
+        </axis>
+    </animation>
+
+
+
+</PropertyList>
+
+
+
+
+
+
+
+
+
+

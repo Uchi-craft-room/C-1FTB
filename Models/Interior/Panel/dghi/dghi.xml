@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+<path>dghi.ac</path>
+
+<!-- lighting -->
+
+  <animation> 
+   <object-name>mount</object-name>
+<object-name>face</object-name>
+<object-name>needle1</object-name>
+<object-name>face.001</object-name>
+<object-name>needle2</object-name>
+<object-name>needle-ctr</object-name>
+   <type>material</type>
+    <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.7</red>
+        <green>0.3</green>
+        <blue>0.3</blue>
+      </emission>
+  </animation>
+
+<!-- MAGNETIC-COMPASS-->
+<animation>
+ <type>rotate</type>
+ <object-name>face</object-name>
+<object-name>needle1</object-name>
+<object-name>needle2</object-name>
+<object-name>needle-ctr</object-name>
+ <property>/orientation/heading-deg</property>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!--VOR-->
+<animation>
+ <type>rotate</type>
+<object-name>needle1</object-name>
+<object-name>needle-ctr</object-name>
+   <property>instrumentation/nav/heading-deg</property >
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!--TACAN-->
+<animation>
+ <type>rotate</type>
+<object-name>needle2</object-name>
+<property>instrumentation/tacan/indicated-bearing-true-deg</property >
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- deflection -->
+<animation>
+ <type>translate</type>
+<object-name>needle-ctr</object-name>
+ <property>instrumentation/nav/heading-needle-deflection</property>
+        <interpolation>
+            <entry><ind>-10.0</ind><dep>-0.01</dep></entry>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>10.0</ind><dep>0.01</dep></entry>
+        </interpolation>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>10</max-m>
+ </animation>
+
+</PropertyList>
+
+
+

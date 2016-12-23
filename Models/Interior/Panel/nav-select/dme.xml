@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <path>dme.ac</path>
+
+<!-- -hotspots -->
+
+<animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>vor-set</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+                <command>nasal</command>
+                <script>dmesw.dme_step(1)</script>
+       </binding>
+        <binding>
+                <command>property-assign</command>
+                <property>instruments/nav-select</property>
+                <value>0</value>
+       </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>tacan-set</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+                <command>nasal</command>
+                <script>dmesw.dme_step(-1)</script>
+       </binding>
+        <binding>
+                <command>property-assign</command>
+                <property>instruments/nav-select</property>
+                <value>1</value>
+       </binding>
+    </action>
+</animation>
+
+ <animation>
+ <object-name>Switch</object-name>
+    <object-name>knob</object-name>
+    <object-name>SwitchNut</object-name>
+    <object-name>SwitchRot</object-name>
+    <object-name>dmebezel</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>  0.7 </red>
+        <green>0.3 </green>
+        <blue> 0.3 </blue>
+      </emission>
+  </animation> 
+
+ <animation>
+   <type>rotate</type>
+    <object-name>knob</object-name>
+      <property>instruments/nav-select</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>45</dep></entry>
+            <entry><ind>1</ind><dep>-45</dep></entry>
+        </interpolation>
+    <center>
+      <x-m> 0.012</x-m>
+      <y-m>-0.017</y-m>
+      <z-m>-0.005</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+ </animation>
+
+</PropertyList>
+
+
+

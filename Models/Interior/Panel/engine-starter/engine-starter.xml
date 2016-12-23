@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>engine-starter.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>>
+    <object-name>start-switch-RH_0</object-name>
+    <object-name>start-switch-LH_0</object-name>
+    <object-name>rot-RH</object-name>
+    <object-name>rot-LH</object-name>
+    <object-name>start-switch-RH_1</object-name>
+    <object-name>start-switch-LH_1</object-name>
+    <object-name>nut-RH</object-name>
+    <object-name>nut-LH</object-name>
+    <object-name>gen-rot-UPR-LH</object-name>
+    <object-name>ign-nut-LH</object-name>
+    <object-name>ign-rot-LH</object-name>
+    <object-name>ign-switch_0</object-name>
+    <object-name>ign-switch_1</object-name>
+    <object-name>Base</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+<!--  engine[0] starter -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>start-switch-RH_0</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/engines/engine/starter</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>start-switch-RH_0</object-name>
+    <property>controls/engines/engine/starter</property>
+    <factor>22.5</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+<!--  engine[1] starter -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>start-switch-LH_0</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/engines/engine[1]/starter</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>start-switch-LH_0</object-name>
+    <property>controls/engines/engine[1]/starter</property>
+    <factor>22.5</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+<!--   CONTINUOUS IGN  -->
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ign-switch_0</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/electric/external-power</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/engines/engine/ignition</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ign-switch_0</object-name>
+    <property>controls/engines/engine/ignition</property>
+    <factor>35</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>light</object-name>
+    <condition>
+     <and>
+     <equals>
+       <property>controls/engines/engine/ignition</property>
+       <value>1</value>
+     </equals>
+     <greater-than>
+	   <property>systems/electrical/volts</property>
+	   <value>24</value>
+     </greater-than>
+    </and>
+    </condition>
+  </animation>
+
+</PropertyList>
+
+
+

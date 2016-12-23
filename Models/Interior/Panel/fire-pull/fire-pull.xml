@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>fire-pull.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>switch.002</object-name>
+    <object-name>rot-UPR.002</object-name>
+    <object-name>switch</object-name>
+    <object-name>rot-UPR</object-name>
+    <object-name>switch</object-name>
+    <object-name>rot-UPR</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>pull_1</object-name>
+    <object-name>pull_2</object-name>
+    <object-name>pull_apu</object-name>
+    <emission>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+</PropertyList>

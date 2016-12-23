@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>flap-indicate.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Face</object-name>
+  <object-name>PointerTip</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+      <red>   0.7 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </emission>
+ </animation>
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>PointerCentre</object-name>
+        <object-name>PointerTip</object-name>
+        <property>/surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry><ind>0   </ind> <dep>0.0</dep></entry>
+            <entry><ind>0.15</ind> <dep>48</dep></entry>
+            <entry><ind>0.3 </ind> <dep>150</dep></entry>
+            <entry><ind>0.45</ind> <dep>170</dep></entry>
+            <entry><ind>0.6</ind> <dep>210</dep></entry>
+            <entry><ind>0.75</ind> <dep>260</dep></entry>
+            <entry><ind>1.0 </ind> <dep>292</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+</PropertyList>
+
+
+
+
+
+
+
+
+
+

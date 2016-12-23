@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <name>ASI</name>
+ <path>asi.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ASI_needle1</object-name>
+  <object-name>mach-face</object-name>
+  <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>20</ind><dep>9</dep></entry>
+   <entry><ind>40</ind><dep>30</dep></entry>
+   <entry><ind>100</ind><dep>100</dep></entry>
+   <entry><ind>160</ind><dep>175</dep></entry>
+   <entry><ind>200</ind><dep>210</dep></entry>
+   <entry><ind>300</ind><dep>258</dep></entry>
+   <entry><ind>450</ind><dep>340</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>mach-face</object-name>
+  <property>velocities/mach</property>
+  <interpolation>
+   <entry><ind>0.3</ind><dep>0</dep></entry>
+   <entry><ind>1.0</ind><dep>171</dep></entry>
+  </interpolation>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+ <!-- Lightning -->
+
+ <animation>
+  <object-name>ASI_mount</object-name>
+  <object-name>ASI_needle1</object-name>
+  <object-name>ASI_needl2</object-name>
+  <object-name>ASI_bkg</object-name>
+  <object-name>ASI_bkg2</object-name>
+  <object-name>ASI_safe-speed-bug</object-name>
+  <object-name>ASI_knob</object-name>
+  <type>material</type>
+  <emission>
+   <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+   <red>0.7</red>
+   <green>0.3</green>
+   <blue>0.3</blue>
+  </emission>
+ </animation>
+
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>10</max-m>
+ </animation>
+
+</PropertyList>
