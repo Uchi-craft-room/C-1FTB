@@ -31,6 +31,7 @@
     	<object-name>FLAP_SPEED</object-name>
     	<object-name>DOOR_OPEN</object-name>
    	<object-name>REVERSER</object-name>
+   	<object-name>SPBK-AUTO</object-name>
      <emission>
       <red>   1 </red>
       <green> 1 </green>
@@ -38,6 +39,19 @@
     </emission>
   </animation>
 
+  <animation>
+    <type>select</type>
+    <object-name>SPBK-AUTO</object-name>
+  <condition>
+   <and>
+     <greater-than>
+	<property>systems/electrical/volts</property>
+	<value>16</value>
+     </greater-than>
+            <property>controls/flight/spoiler-switch-auto</property>
+    </and>
+   </condition>
+  </animation>
 
   <animation>
     <type>select</type>

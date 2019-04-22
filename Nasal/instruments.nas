@@ -76,27 +76,27 @@ setlistener("/sim/signals/fdm-initialized",initialize);
 ######################### CANOPY PARAMETOR ##########################################
 #splash
 setlistener("/engines/engine[0]/n1",func{
-             interpolate("/environment/aircraft-effects/splash-vector-x",getprop("/velocities/airspeed-kt")*0.008,1)});
-props.globals.getNode("/environment/aircraft-effects/splash-vector-y", 0).setIntValue(0.01);
-props.globals.getNode("/environment/aircraft-effects/splash-vector-z", 0).setIntValue(-1);
+             interpolate("environment/aircraft-effects/splash-vector-x",getprop("/velocities/airspeed-kt")*0.008,1)});
+props.globals.getNode("environment/aircraft-effects/splash-vector-y", 0).setIntValue(0.01);
+props.globals.getNode("environment/aircraft-effects/splash-vector-z", 0).setIntValue(-1);
 
 #TAT
-
+setprop("/environment/total-air-temparature-degc",0);
 setlistener("/engines/engine[0]/n1",func{
-             interpolate("/environment/total-air-temparature-degc",getprop("/environment/temperature-degc")+ ((getprop("/environment/temperature-degc")+ 273) * 0.2 * (getprop("/velocities/mach") * getprop("/velocities/mach"))),5)});
+             interpolate("environment/total-air-temparature-degc",getprop("environment/temperature-degc")+ ((getprop("environment/temperature-degc")+ 273) * 0.2 * (getprop("velocities/mach") * getprop("/velocities/mach"))),5)});
 
 #frost
 setprop("/environment/windowheat-level", 1);
-setlistener("/engines/engine[0]/n1",func{
-             interpolate("/environment/aircraft-effects/frost-level",(getprop("/environment/total-air-temparature-degc")+10)*getprop("/environment/windowheat-level")*-0.03,1)});
-setlistener("/controls/anti-ice/window-heat",func{
-             interpolate("/environment/windowheat-level",1-getprop("/controls/anti-ice/window-heat")*0.9,10)});
+setlistener("engines/engine[0]/n1",func{
+             interpolate("environment/aircraft-effects/frost-level",(getprop("environment/total-air-temparature-degc")+10)*getprop("environment/windowheat-level")*-0.03,1)});
+setlistener("controls/anti-ice/window-heat",func{
+             interpolate("environment/windowheat-level",1-getprop("controls/anti-ice/window-heat")*0.9,10)});
 
 #BATT
 setlistener("systems/electrical/batt-volts",func{
-             interpolate("/systems/electrical/batt-volts-norm",getprop("systems/electrical/batt-volts"),2)});
+             interpolate("systems/electrical/batt-volts-norm",getprop("systems/electrical/batt-volts"),2)});
 setlistener("systems/electrical/batt-volts",func{
-             interpolate("/systems/electrical/batt-amps-norm",getprop("systems/electrical/batt-volts")/4,2)});
+             interpolate("systems/electrical/batt-amps-norm",getprop("systems/electrical/batt-volts")/4,2)});
 
 #EXTERNAL-POWER
 setlistener("systems/electrical/suppliers/battery",func{
@@ -113,4 +113,22 @@ setlistener("controls/APU/off-start-run",func{
 #TRUE-HEADING SET
 setlistener("autopilot/settings/heading-bug-deg",func{
              interpolate("autopilot/settings/true-heading-deg",getprop("autopilot/settings/heading-bug-deg"),0)});
+
+#AUTO-SPOILER
+setlistener("gear/gear[0]/wow", func(wow_0){
+	var wow_0 = wow_0.getValue();
+	var state = getprop("controls/flight/spoiler-switch-auto");
+	if(wow_0 and state){
+		setprop("controls/flight/speedbrake",1);
+	}
+},1,0);
+
+setlistener("gear/gear[1]/wow", func(wow_1){
+	var wow_1 = wow_1.getValue();
+	var state = getprop("controls/flight/spoiler-switch-auto");
+	if(wow_1 and state){
+		setprop("controls/flight/speedbrake",1);
+	}
+},1,0);
+
 
