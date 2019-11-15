@@ -50,6 +50,8 @@
         <int type="int">0</int>  <!-- 7 color -->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/surface/speedbrake-pos-norm"/>
+        <float n="2" alias="gear/gear[0]/compression-m"/>
+        <float n="3" alias="gear/gear[1]/compression-m"/>
       </generic>
     </multiplay>
 

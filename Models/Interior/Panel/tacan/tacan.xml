@@ -190,6 +190,42 @@
         <type>pick</type>
         <object-name>CTL-32.pwr</object-name>
         <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/tacan/frequencies/selected-channel</property>
+                <step>10</step>
+                <min>0</min>
+                <max>126</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>CTL-32.pwr</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/tacan/frequencies/selected-channel</property>
+                <step>-10</step>
+                <min>0</min>
+                <max>126</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>CTL-32.pwr</object-name>
+        <action>
             <button>4</button>
             <repeatable>true</repeatable>
             <interval-sec>0.2</interval-sec>
