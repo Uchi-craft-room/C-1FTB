@@ -1719,13 +1719,13 @@
 
     <!-- White navigation light on tail -->
   <model>
-  <name>Tail-Light</name>
-    <path>Aircraft/C-1FTB/Models/light/TailLight.xml</path>
-    <offsets>
-      <x-m> 19 </x-m>
-      <y-m> 0 </y-m>
-      <z-m>  7.0 </z-m>
-    </offsets>
+	<name>Tail-Light</name>
+	<path>Aircraft/C-1FTB/Models/light/TailLight.xml</path>
+	<offsets>
+		<x-m> 19.0 </x-m>
+		<y-m>  0.0 </y-m>
+		<z-m>  7.0 </z-m>
+	</offsets>
   </model> 
 
 
@@ -1733,66 +1733,45 @@
         <name>nav-light-tail</name>
         <path>effects/lights/procedural_light_nav_tail.xml</path>
         <offsets>
-         <x-m> 19 </x-m>
-         <y-m> 0 </y-m>
-         <z-m>  7.0 </z-m>
+		<x-m> 19.0 </x-m>
+		<y-m>  0.0 </y-m>
+		<z-m>  7.0 </z-m>
+		<heading-deg> 180 </heading-deg>
         </offsets>
     </model>
 
 
     <!-- White navigation light on LWR -->
   <model>
-  <name>Lwr-Light</name>
-    <path>Aircraft/C-1FTB/Models/light/TailLight.xml</path>
-    <offsets>
-      <x-m> -0.50 </x-m>
-      <y-m>  0 </y-m>
-      <z-m> -2 </z-m>
-    </offsets>
+	<name>Lwr-Light</name>
+	<path>Aircraft/C-1FTB/Models/light/TailLight.xml</path>
+	<offsets>
+		<x-m> -0.5 </x-m>
+		<y-m>  0.0 </y-m>
+		<z-m> -2.0 </z-m>
+	</offsets>
   </model>
-
-   <model>
-        <name>Lwr-nav-light</name>
-        <path>effects/lights/procedural_light_nav_lwr.xml</path>
-        <offsets>
-      <x-m> -0.50 </x-m>
-      <y-m>  0 </y-m>
-      <z-m> -2 </z-m>
-        </offsets>
-    </model>
 
     <!-- White navigation light on TOP -->
   <model>
-    <name>Top-Light</name>
-    <path>Aircraft/C-1FTB/Models/light/TailLight.xml</path>
-    <offsets>
-      <x-m> -3 </x-m>
-      <y-m>  0 </y-m>
-      <z-m>  2.3 </z-m>
-    </offsets>
+	<name>Top-Light</name>
+	<path>Aircraft/C-1FTB/Models/light/TailLight.xml</path>
+	<offsets>
+		<x-m> -3.0 </x-m>
+		<y-m>  0.0 </y-m>
+		<z-m>  2.3 </z-m>
+	</offsets>
   </model>
-
-   <model>
-        <name>Top-nav-light</name>
-        <path>effects/lights/procedural_light_nav_top.xml</path>
-        <offsets>
-      <x-m> -3 </x-m>
-      <y-m>  0 </y-m>
-      <z-m>  2.3 </z-m>
-        </offsets>
-    </model>
 
 
   <animation>
     <type>select</type>
-    <object-name>Tail-Light</object-name>
-    <object-name>Lwr-Light</object-name>
     <object-name>nav-light-left</object-name>
     <object-name>nav-light-right</object-name>
+    <object-name>Tail-Light</object-name>
     <object-name>nav-light-tail</object-name>
-    <object-name>Lwr-nav-light</object-name>
+    <object-name>Lwr-Light</object-name>
     <object-name>Top-Light</object-name>
-    <object-name>Top-nav-light</object-name>
     <condition>
           <property>controls/lighting/nav-lights</property>
     </condition>

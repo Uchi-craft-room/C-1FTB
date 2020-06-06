@@ -45,7 +45,7 @@ var light_manager = {
 
         # light 1 ########
         # offsets to aircraft center
-        me.light1_xpos = 60.0;
+        me.light1_xpos = 80.0;
         me.light1_ypos = 10.0;
         me.light1_zpos =  2.5;
 
@@ -56,11 +56,11 @@ var light_manager = {
 
         # spot size
         me.light1_size = 15.0;
-        me.light1_stretch = 2;
+        me.light1_stretch = 5.5;
 
         # light 2 ########
         # offsets to aircraft center
-        me.light2_xpos = 60.0;
+        me.light2_xpos = 80.0;
         me.light2_ypos = -10.0;
         me.light2_zpos =  2.5;
 
@@ -71,7 +71,7 @@ var light_manager = {
 
         # spot size
          me.light2_size = 15.0;
-         me.light2_stretch = 2;
+         me.light2_stretch = 5.5;
 
         # light 3 ########
         # offsets to aircraft center
@@ -238,7 +238,7 @@ setlistener("/sim/signals/fdm-initialized", func {
         light_manager.enable_or_disable(node.getValue(), 1);
     }, 1, 0);
 
-    setlistener("/sim/model/C-1FTB/lighting/nav-lights", func (node) {
+    setlistener("/controls/lighting/nav-lights", func (node) {
         light_manager.enable_or_disable(node.getValue(), 2);
         light_manager.enable_or_disable(node.getValue(), 3);
     }, 1, 0);
